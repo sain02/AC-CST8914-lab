@@ -4,8 +4,9 @@
 <head>
   <title>Question 3- CSS & HTML</title>
   <style>
-    .button {
-      background-color: #4CAF50;
+    /* Changed from div.button to real <button> styling */
+    button {
+      background-color: #005a9e; /* dark blue with high contrast */
       border: none;
       color: white;
       padding: 15px 32px;
@@ -15,11 +16,12 @@
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
+      border-radius: 6px; /* small rounded corners */
     }
 
     body {
       padding: 20px;
-      background-color: #2f2f2f;
+      background-color: #ffffff; /* switched to white for readability */
     }
 
     h1, h2, p {
@@ -34,7 +36,9 @@
 
   <p>What causes errors in HTML?</p>
 
-  <div class="button">Submit answers</div>
+   <!-- Changed <div class="button"> to semantic <button> -->
+    <button type="button">Submit answers</button>
+  <!--div class="button">Submit answers- div-->
 
 </body>
 

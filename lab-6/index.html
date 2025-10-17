@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"> <!--  Q1: Page language declared -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hi/Max Real Estate – Canada’s Most Trusted Agents</title> <!-- Q1: Unique and descriptive title -->
+</head>
+<body>
+
+  <!-- Q1: ARIA landmark with unique label -->
+  <header role="banner" aria-label="Site Header">
+    <h1>Hi/Max Real Estate</h1> <!-- Q2: Only one <h1> used -->
+  </header>
+
+  <!-- Q1: ARIA landmark with unique label -->
+  <nav role="navigation" aria-label="Primary Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li> <!-- Q2: Functional link -->
+      <li><a href="listings.html">Listings</a></li> <!-- Q2: Functional link -->
+      <li><a href="agents.html">Agents</a></li> <!-- Q2: Functional link -->
+    </ul>
+  </nav>
+
+  <!-- Q1: ARIA landmark with unique label -->
+  <main role="main" aria-label="Main Content">
+
+    <!-- Q2: Section with heading -->
+    <section aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Welcome to Hi/Max Real Estate</h2>
+      <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make...</p>
+    </section>
+
+    <!-- Q2: Section with heading and accessible data table -->
+    <section aria-labelledby="why-heading">
+      <h2 id="why-heading">Why Choose Hi/Max</h2>
+      <p>Hi/Max agents go above and beyond...</p>
+
+      <table>
+        <caption>Stats of HI/Max</caption>
+        <thead>
+          <tr>
+            <th id="year">Year</th> <!-- Q2: Table header with ID -->
+            <th id="sold">Sold Properties</th>
+            <th id="price">Average Selling Price</th>
+            <th id="qc">Quebec</th>
+            <th id="on">Ontario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="year">2021</td> <!-- Q2: Data cell linked to header -->
+            <td headers="sold">50</td>
+            <td headers="price">$500,000</td>
+            <td headers="qc">189,000</td>
+            <td headers="on">—</td>
+          </tr>
+          <tr>
+            <td headers="year">2022</td>
+            <td headers="sold">100</td>
+            <td headers="price">$780,000</td>
+            <td headers="qc">240,000</td>
+            <td headers="on">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Q2: Section with list and functional links -->
+    <section aria-labelledby="resources-heading">
+      <h2 id="resources-heading">Related Resources</h2>
+      <p><a href="buying-tips.html">Click here</a> for buying tips.</p> <!-- Q2: Functional link with "Click here" -->
+      <p><a href="home-worth.html">Click here</a> to find out how much your current home is worth.</p>
+      <p><a href="resources.html">Click here</a> to explore more resources.</p>
+    </section>
+
+    <!-- Q2: Section with articles -->
+    <section aria-labelledby="more-heading">
+      <h2 id="more-heading">More Resources on Choosing the Right Agent</h2>
+
+      <article aria-labelledby="risks-heading">
+        <h3 id="risks-heading">What Are The Risks of Selling a Home Yourself?</h3>
+        <p>We’ve all seen the videos...</p>
+        <p><a href="risks-of-selling.html">Click here</a> to read more.</p> <!-- Q2: Functional link with "Click here" -->
+      </article>
+
+      <article aria-labelledby="questions-heading">
+        <h3 id="questions-heading">7 Questions to Ask a Real Estate Agent</h3>
+        <p>According to research...</p>
+        <p><a href="questions-to-ask.html">Click here</a> to read the full list.</p>
+      </article>
+
+      <article aria-labelledby="reasons-heading">
+        <h3 id="reasons-heading">8 Reasons to Hire an Agent</h3>
+        <p>With all the many different moving parts...</p>
+        <p><a href="reasons-to-hire.html">Click here</a> to learn more.</p>
+      </article>
+    </section>
+
+    <!-- Q2: Section with image and alt text -->
+    <section aria-labelledby="image-heading">
+      <h2 id="image-heading">Our Agents in Action</h2>
+      <img src="agent-photo.jpg" alt="Hi/Max agent helping a family buy their first home" /> <!-- Q2: Descriptive image alt text -->
+      <p>This image shows a Hi/Max agent guiding a family through their first home purchase.</p>
+    </section>
+
+  </main>
+
+  <!-- Q1: ARIA landmark with unique label -->
+  <nav role="navigation" aria-label="Footer Navigation">
+    <ul>
+      <li><a href="privacy.html">Privacy Policy</a></li> <!-- Q2: Functional link -->
+      <li><a href="terms.html">Terms of Service</a></li> <!-- Q2: Functional link -->
+    </ul>
+  </nav>
+
+  <!-- Q1: ARIA landmark with unique label -->
+  <footer role="contentinfo" aria-label="Site Footer">
+    <p>Follow us on social media:</p>
+    <!-- Q1: Accessible SVG icon from slides -->
+    <a href="https://twitter.com/HiMaxRealEstate" aria-label="Follow Hi/Max Real Estate on Twitter">
+      <svg role="img" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <title>Twitter icon</title>
+        <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.3 3.9A12.13 12.13 0 013 4.8a4.28 4.28 0 001.32 5.71 4.27 4.27 0 01-1.94-.54v.05a4.28 4.28 0 003.43 4.2 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.97A8.6 8.6 0 012 19.54a12.14 12.14 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.7 8.7 0 0024 5.5a8.48 8.48 0 01-2.54.7z"/>
+      </svg>
+    </a>
+  </footer>
+
+</body>
+</html>
+
